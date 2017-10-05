@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b5b5b5"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#3e50b4"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+                <!-- Message layout layout-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="10dp"
+
+                    >
+                        <TextView
+
+                            android:id="@+id/settxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textColor="#F5F5F5"
+                            android:textSize="22sp"
+                            android:padding="10dp"
+                            android:fontFamily="sans-serif"
+                            ></TextView>
+
+                </LinearLayout>
+
+                <!-- Button layout-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            >
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+
+                                    >
+
+                                        <Button
+                                            android:id="@+id/approveBtn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:textColor="#FFFFFF"
+                                            android:textStyle="bold"
+                                            android:textSize="18sp"
+                                            android:text="Approve"
+                                            android:background="@color/colorAccent"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+
+
+                                    android:background="#3F51B5"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    >
+                                        <Button
+                                            android:id="@+id/declineBtn"
+                                            android:layout_gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="Decline"
+                                            android:background="@android:color/darker_gray"
+                                            android:textStyle="bold"
+                                            android:textSize="18sp"
+                                            />
+                                </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+     </LinearLayout>
+</LinearLayout>
